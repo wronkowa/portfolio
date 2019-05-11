@@ -17,17 +17,17 @@
 </head>
 
 <body>
-  <header class="header">
+  <nav class="main-nav">
     <div class="hamburger">
       <i class="fas fa-bars"></i>
     </div>
-    <nav class="main-nav ">
-      <ul>
-        <li><a href="#">O mnie</a></li>
-        <li><a href="#">Projekty</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
+    <ul class="main-nav--list">
+      <li><a href="#">O mnie</a></li>
+      <li><a href="#">Projekty</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+  <header class="header">
     <div class="header-text">
       <h1>Cześć!</h1>
       <p>Jestem Magda i chcę zostać front-end developerem...</p>
@@ -112,6 +112,45 @@
       </div>
     </div>
   </section>
+
+  <!-- section projects -->
+  <section class="projects">
+    <h2>Projekty</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, sunt, iusto iste eveniet nobis atque iure
+      beatae mollitia nostrum nemo dolore odio veritatis molestias quae. Perspiciatis modi soluta corrupti aliquam?</p>
+  </section>
+
+  <!-- section kontakt -->
+  <section class="contact">
+    <h2>W kontakcie! :)</h2>
+    <div class="contact--socials">
+      <div class="container">
+        <i class="fas fa-envelope"></i>
+        <a href="">wrona_m@wp.pl</a>
+      </div>
+      <div class="container">
+        <i class="fab fa-github"></i>
+        <a href="github.com/wronkowa" target="_blank">wronkowa</a>
+      </div>
+      <div class="container">
+        <i class="fab fa-facebook-f"></i>
+        <a href="facebook.com/dshuhd" target="_blank">Magda</a>
+      </div>
+    </div>
+    <div class="contact--form">
+      <form action="">
+        <input type="text" placeholder="Wpisz imię" required>
+        <input type="email" placeholder="Wpisz email" required>
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Wpisz wiadomość do mnie... " required></textarea>
+        <button class="btn btn__small">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- stopka -->
+  <footer>
+    <p>Wszystkie prawa zastrzeżone! &copy <a href="https://github.com/wronkowa" target="_blank">wronkowa</a></p>
+  </footer>
   <script src="main.js"></script>
 </body>
 

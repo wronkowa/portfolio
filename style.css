@@ -25,8 +25,11 @@ html{
 }
 .header{
   position: relative;
+  /* top: 0;
+  left: 0; */
   height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 .header::before{
   content: '';
@@ -96,6 +99,7 @@ html{
   right: 10px;
   font-size: 2rem;
   color: white;
+  cursor: pointer;
 }
 
 .active-hamb{
@@ -103,14 +107,17 @@ html{
 }
 
 .main-nav{
-  position: fixed;
   width: 100%;
-  background-color: white;
   text-align: center;
   z-index: 1;
-  transform: translateY(-100%);
+}
+.main-nav--list{
+  background-color: white;
+  width: 100%;
+  position: fixed;
   transition: .3s linear;
   z-index: 9;
+  transform: translateY(-100%);
 }
 .active-nav{
   transform: translateY(0);
@@ -131,14 +138,16 @@ html{
 
 
 /* section about me */
-.about-me{
+.about-me,
+.projects,
+.contact{
   text-align: center;
   padding-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
 
-.about-me h2{
+section h2{
   color: var(--main-yellow);
   padding: 30px 0;
   font-size: 3rem;
@@ -169,4 +178,82 @@ html{
   text-align: left;
   padding: 20px 0 10px;
   font-size: 1.7rem;
+}
+
+
+.projects{
+  background-color: var(--main-yellow);
+}
+
+.projects h2{
+  color: rgb(22, 22, 22);
+  text-shadow: none;
+}
+
+.projects p{
+  color: black;
+  padding: 10px;
+}
+
+.contact {
+  padding:0 5% 30px;
+}
+
+.contact .container{
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.contact i{
+  color: var(--main-yellow);
+  font-size: 1.4rem;
+}
+.contact .container a{
+  display: block;
+  width: 70%;
+  text-align: left;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.contact--form {
+  background-color: #676666;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+.contact--form form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact--form form input,
+.contact--form form textarea,
+button
+{
+  margin: 10px 0;
+  padding: 5px;
+  background-color: lightgray;
+  border: none;
+  outline: none;
+}
+
+.btn__small{
+  width: 50%;
+  margin: 10px auto;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+footer{
+
+}
+
+footer p{
+  color: black;
+  padding: 20px 0;
+  text-align: center;
 }
