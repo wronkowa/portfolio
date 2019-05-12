@@ -19,6 +19,10 @@ html{
   color: white;
   font-family: 'Sansita', sans-serif;
 }
+*[placeholder]{
+  font-family: 'Sansita', sans-serif;
+  letter-spacing: 1px;
+}
 .header,
  section{
   background-color: var(--main-grey);
@@ -256,4 +260,23 @@ footer p{
   color: black;
   padding: 20px 0;
   text-align: center;
+}
+
+@media (orientation: landscape){
+  .header::before{
+    bottom: -50%;
+    right: 0;
+    width: 50%;
+    height: 90%;
+  }
+  .header-img{
+    width: 40%;
+  }
+  .header-img img{
+    left: -5%;
+  }
+  .header-text{
+    top: 25%;
+    left: 40%;
+  }
 }
