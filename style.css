@@ -161,6 +161,7 @@ section h2{
 .about-me--skills{
   width: 85%;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 .container{
@@ -170,7 +171,7 @@ section h2{
 .container p{
   width: 50%;
   text-align: left;
-  padding: 6px 10px;
+  padding: 10px 10px;
   font-size: 1.3rem;
 }
 
@@ -228,6 +229,13 @@ section h2{
   padding: 10px 0;
 }
 
+.contact--form h3{
+  color: var(--main-yellow);
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  text-shadow: 1px 1px black;
+}
 .contact--form form{
   display: flex;
   flex-direction: column;
@@ -261,13 +269,29 @@ footer p{
   padding: 20px 0;
   text-align: center;
 }
-
+@media (max-width: 320px){
+  .about-me--metrics,
+.about-me--skills{
+  width: 90%;
+  padding: 10px 0;
+}
+.container p{
+  font-size: 1.2rem;
+}
+.contact h2{
+  font-size: 2.5rem;
+}
+  
+}
 @media (orientation: landscape){
   .header::before{
     bottom: -50%;
     right: 0;
     width: 50%;
     height: 90%;
+  }
+  .header-text{
+    width: 40%;
   }
   .header-img{
     width: 40%;
@@ -277,6 +301,83 @@ footer p{
   }
   .header-text{
     top: 25%;
-    left: 40%;
+    left: 45%;
+  }
+  .contact--form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px){
+  html {
+    font-size: 32px;
+  }
+  .header-text{
+    top: 45%;
+    width: 70%;
+  }
+ 
+  .header-img{
+    width: 85%;
+  }
+  .header-img img{
+    left: -5%;
+  }
+  .about-me--metrics,
+.about-me--skills{
+  width: 55%;
+}
+  .contact--form{
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .contact--form h3{
+    font-size: 1.5rem;
+  }
+
+.contact--form form input,
+.contact--form form textarea,
+button
+{
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+}
+
+@media (min-width: 1024px){
+  html {
+    font-size: 28px;
+  }
+  .header-text{
+    top: 40%;
+    left: 30%;
+    width: 50%;
+  }
+ 
+  .header-img{
+    width: 50%;
+  }
+  .header-img img{
+    left: -5%;
+  }
+}
+
+@media (min-width: 1300px){
+  html {
+    font-size: 20px;
+  }
+  .header-text{
+    top: 40%;
+    left: 35%;
+    width: 25%;
+  }
+ 
+  .header-img{
+    width: 40%;
+  }
+  .header-img img{
+    width: 80%;
+    left: -5%;
   }
 }
